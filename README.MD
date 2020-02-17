@@ -1,0 +1,1 @@
+This project was to learn how to embed a video into a page as well as work on HTML and CSS.

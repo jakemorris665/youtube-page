@@ -1,0 +1,204 @@
+html {
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "video rec rec"
+    "info rec rec"
+    "chan rec rec"
+    "cmt rec rec";
+}
+
+ul {
+    list-style-type: none;
+    display: inline;
+    line-break: none;
+}
+
+li {
+    float: left;
+}
+
+h1 {
+    font-size: 14pt;
+}
+
+h2 {
+    font-size: 10pt;
+    color: #8c8c8c;
+}
+
+h4 {
+    display: inline;
+    text-decoration: none;
+    color: #8c8c8c;
+}
+
+iframe {
+    width: 94%;
+    height: 100%;
+}
+
+.video-player {
+    margin-top: 2%;
+    margin-left: 4%;
+    height: 500px;
+}
+
+.head-logo {
+    height: 24px;
+    width: 80px;
+    padding-left: 50px;
+    padding-top: 15px;
+}
+
+.magnify {
+    height: 30px;
+    width: 55px;
+}
+
+.search {
+    display:flex;
+    margin-left: 50%;
+    width: 500px;
+}
+
+.search-form {
+    float: left;
+    padding-top: 15px;
+    padding-left: 70px;
+    grid-area: header;
+}
+
+.input-form {
+    flex: 1;
+}
+
+.video-info, .comment-section, .channel-info {
+    padding: 5px;
+    margin-left: 30px;
+}
+
+.video-info, .comment-section, .recommended, .channel-info {
+    font-size: 1.4em;
+}
+
+.recommended {
+    margin-top: 2%;
+    margin-left: -5%;
+    width: 340px;
+}
+
+.thumbnail {
+    display:flex;
+    flex-direction: row;
+    margin: 5px;
+    font-size: 9pt;
+}
+
+.channel-content, .commentContent {
+    display:flex;
+    flex-direction: row;
+}
+
+.channel-content img {
+    border-radius: 50px;
+    width: 48px;
+    height: 48px;
+}
+
+.channelTxt {
+    margin-left: 10px;
+}
+
+.channelTxt p {
+    color: #8c8c8c;
+    font-size: 10pt;
+    margin-top: -13%;
+    width: 110px;
+}
+
+.channelTxt h3 {
+    margin-top: 2%;
+}
+
+.commentContent img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50px;
+    margin-top: 10px;
+}
+
+.commentContent {
+    margin: 0px 0px 12px 0px;
+}
+
+.commentTxt h1, .commentTxt p {
+    font-size: 12pt;
+    margin-left: 10px;
+}
+
+.commentTxt p {
+    margin-top: -3%;
+    font-size: 11pt;
+}
+
+.subscribe {
+    margin-left: 55%;
+}
+
+.subBtn {
+    margin-top: 2px;
+    background: #cc0404;
+    color: white;
+    height: 40px;
+    width: 118px;
+    border-radius: 3px;
+    font-size: larger;
+}
+
+.thumbnail img {
+    width: 187px;
+    height: 121px;
+}
+
+.thumbnailTxt {
+    height: 130px;
+    margin-left: 10px;
+}
+
+.thumbnailTxt h3, .thumbnailTxt h4, .thumbnailTxt p {
+    margin: 5px 0px 5px 0px;
+}
+
+#header {
+    grid-area: header;
+}
+
+#video {
+    grid-area: video;
+}
+
+#channel {
+    grid-area: chan;
+}
+
+#info {
+    grid-area: info;
+}
+
+#comment {
+    grid-area: cmt;
+}
+
+#recommend {
+    grid-area: rec;
+}
